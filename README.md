@@ -5,6 +5,7 @@
 - [ ] 冒泡排序 - BubbleSort
 - [x] 选择排序 - SelectionSort
 - [x] 插入排序 - InsertionSort
+- [x] 插入排序优化 - InsertionXSort
 - [x] 希尔排序 - ShellSort
 - [ ] 自顶向下归并排序 - MergeSort
 - [ ] 自底向上归并排序 - MergeBUSort
