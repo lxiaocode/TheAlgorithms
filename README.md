@@ -2,7 +2,7 @@
 
 ### 🦊 排序算法 - Sort
 
-- [ ] 冒泡排序 - BubbleSort
+- [x] 冒泡排序 - BubbleSort
 - [x] 选择排序 - SelectionSort
 - [x] 插入排序 - InsertionSort
 - [x] 插入排序优化 - InsertionXSort
