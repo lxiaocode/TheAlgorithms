@@ -10,7 +10,7 @@
 - [x] 希尔排序 - ShellSort
 - [x] 自顶向下归并排序 - MergeSort
 - [x] 自底向上归并排序 - MergeBUSort
-- [ ] 快速排序 - QuickSort
+- [x] 快速排序 - QuickSort
 - [ ] 堆排序 - HeapSort
 
 ### 🦁 搜索算法 - Searchs
