@@ -30,7 +30,7 @@ public class MergeBUSort {
         aux = new Comparable[length];
         for (int size = 1; size < length; size *= 2){
             for (int lo = 0; lo < length - size; lo += 2 * size){
-                merge(array, lo, lo+size-1, Math.max(lo+2*size-1, length-1));
+                merge(array, lo, lo+size-1, Math.min(lo+2*size-1, length-1));
             }
         }
         assert isSort(array);
@@ -80,11 +80,11 @@ public class MergeBUSort {
         // 测试用例
 
         Integer[] integers = {4, 23, 6, 78, 1, 54, 231, 9, 12};
-        MergeSort.sort(integers);
+        MergeBUSort.sort(integers);
         System.out.println(Arrays.toString(integers));
 
         String[] strings = {"c", "a", "e", "b", "d"};
-        MergeSort.sort(strings);
+        MergeBUSort.sort(strings);
         System.out.println(Arrays.toString(strings));
     }
 }
