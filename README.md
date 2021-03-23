@@ -8,8 +8,8 @@
 - [x] 插入排序 - InsertionSort
 - [x] 插入排序优化 - InsertionXSort
 - [x] 希尔排序 - ShellSort
-- [ ] 自顶向下归并排序 - MergeSort
-- [ ] 自底向上归并排序 - MergeBUSort
+- [x] 自顶向下归并排序 - MergeSort
+- [x] 自底向上归并排序 - MergeBUSort
 - [ ] 快速排序 - QuickSort
 - [ ] 堆排序 - HeapSort
 
