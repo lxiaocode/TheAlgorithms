@@ -6,12 +6,12 @@
 
 - [x] 冒泡排序 - BubbleSort | [查看代码](https://github.com/lxiaocode/TheAlgorithms/blob/main/src/main/java/com/lxiaocode/algorithms/sorts/BubbleSort.java)
 - [x] [选择排序 - SelectionSort](https://github.com/lxiaocode/TheAlgorithms/blob/main/doc/sorts/SelectSort.md) | [查看代码](https://github.com/lxiaocode/TheAlgorithms/blob/main/src/main/java/com/lxiaocode/algorithms/sorts/SelectionSort.java)
-- [x] 插入排序 - InsertionSort
-- [x] 插入排序优化 - InsertionXSort
-- [x] 希尔排序 - ShellSort
-- [x] 自顶向下归并排序 - MergeSort
-- [x] 自底向上归并排序 - MergeBUSort
-- [x] 快速排序 - QuickSort
+- [x] 插入排序 - InsertionSort | [查看代码](https://github.com/lxiaocode/TheAlgorithms/blob/main/src/main/java/com/lxiaocode/algorithms/sorts/InsertionSort.java)
+- [x] 插入排序优化 - InsertionXSort | [查看代码](https://github.com/lxiaocode/TheAlgorithms/blob/main/src/main/java/com/lxiaocode/algorithms/sorts/InsertionSortX.java)
+- [x] 希尔排序 - ShellSort | [查看代码](https://github.com/lxiaocode/TheAlgorithms/blob/main/src/main/java/com/lxiaocode/algorithms/sorts/ShellSort.java)
+- [x] 自顶向下归并排序 - MergeSort | [查看代码](https://github.com/lxiaocode/TheAlgorithms/blob/main/src/main/java/com/lxiaocode/algorithms/sorts/MergeSort.java)
+- [x] 自底向上归并排序 - MergeBUSort | [查看代码](https://github.com/lxiaocode/TheAlgorithms/blob/main/src/main/java/com/lxiaocode/algorithms/sorts/MergeBUSort.java)
+- [x] 快速排序 - QuickSort | [查看代码](https://github.com/lxiaocode/TheAlgorithms/blob/main/src/main/java/com/lxiaocode/algorithms/sorts/QuickSort.java)
 - [ ] 堆排序 - HeapSort
 
 ### 🦁 搜索算法 - Searchs
