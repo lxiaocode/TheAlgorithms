@@ -4,7 +4,7 @@
 ### 🦊 排序算法 - Sorts
 > 与排序相关的数据结构：优先队列（二叉堆）
 
-- [x] 冒泡排序 - BubbleSort
+- [x] [冒泡排序 - BubbleSort](https://github.com/lxiaocode/TheAlgorithms/blob/main/doc/sorts/SelectSort.md)
 - [x] 选择排序 - SelectionSort
 - [x] 插入排序 - InsertionSort
 - [x] 插入排序优化 - InsertionXSort
