@@ -4,8 +4,8 @@
 ### 🦊 排序算法 - Sorts
 > 与排序相关的数据结构：优先队列（二叉堆）
 
-- [x] 冒泡排序 - BubbleSort - [code](https://github.com/lxiaocode/TheAlgorithms/blob/main/src/main/java/com/lxiaocode/algorithms/sorts/BubbleSort.java)
-- [x] [选择排序 - SelectionSort](https://github.com/lxiaocode/TheAlgorithms/blob/main/doc/sorts/SelectSort.md) - [code](https://github.com/lxiaocode/TheAlgorithms/blob/main/src/main/java/com/lxiaocode/algorithms/sorts/SelectionSort.java)
+- [x] 冒泡排序 - BubbleSort | [查看代码](https://github.com/lxiaocode/TheAlgorithms/blob/main/src/main/java/com/lxiaocode/algorithms/sorts/BubbleSort.java)
+- [x] [选择排序 - SelectionSort](https://github.com/lxiaocode/TheAlgorithms/blob/main/doc/sorts/SelectSort.md) | [查看代码](https://github.com/lxiaocode/TheAlgorithms/blob/main/src/main/java/com/lxiaocode/algorithms/sorts/SelectionSort.java)
 - [x] 插入排序 - InsertionSort
 - [x] 插入排序优化 - InsertionXSort
 - [x] 希尔排序 - ShellSort
