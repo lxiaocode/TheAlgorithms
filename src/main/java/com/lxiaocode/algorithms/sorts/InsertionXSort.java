@@ -3,19 +3,23 @@ package com.lxiaocode.algorithms.sorts;
 import java.util.Arrays;
 
 /**
- * 插入排序 - 优化：
- * 哨兵，在插入排序开始前，先将最小的元素将其置于数组最左边。这样就能消除内循环中判断数组越界条件。
- * 不使用交换元素，在插入排序时，循环中将较大的元素都向右移动而不总是交换两个元素(这样访问数组的次数就能减半)。
- *
  * @author lixiaofeng
  * @date 2021/3/21 下午11:14
  * @blog http://www.lxiaocode.com/
  */
-public class InsertionXSort {
-
+public class InsertionXSort extends SortAlgorithm {
+    /**
+     * 禁止实例化
+     */
     private InsertionXSort(){}
 
+    /**
+     * 插入排序优化版过程
+     * @param array 待排序数组
+     * @param <T> 元素泛型
+     */
     public static <T extends Comparable<T>> void sort(T[] array){
+        // 选择最小元素作为哨兵
         int n = array.length;
         int exchange = 0;
         for (int i = n - 1; i > 0; i--){
@@ -25,40 +29,23 @@ public class InsertionXSort {
             }
         }
         if (exchange == 0) return;
-
+        // 不使用 exch() 方法交换元素
         for (int i = 2; i < n; i++){
-            T v = array[i];
+            T current = array[i];
             int j = i;
-            while (less(v, array[j - 1])){
+            while (less(current, array[j - 1])){
                 array[j] = array[j - 1];
                 j--;
             }
-            array[j] = v;
+            array[j] = current;
         }
         assert isSort(array);
     }
 
-    private static <T extends Comparable<T>> boolean less(T a, T b){
-        return a.compareTo(b) < 0;
-    }
-
-    private static <T extends Comparable<T>> void exch(T[] array, int i, int j){
-        T tmp = array[i];
-        array[i] = array[j];
-        array[j] = tmp;
-    }
-
-    private static <T extends Comparable<T>> boolean isSort(T[] array){
-        return isSort(array, 0, array.length - 1);
-    }
-
-    private static <T extends Comparable<T>> boolean isSort(T[] array, int lo, int hi){
-        for (int i = lo + 1; i <= hi; i++){
-            if (less(array[i], array[i - 1])) return false;
-        }
-        return true;
-    }
-
+    /**
+     * 插入排序优化版测试用例
+     * @param args
+     */
     public static void main(String[] args) {
         // 测试用例
 
