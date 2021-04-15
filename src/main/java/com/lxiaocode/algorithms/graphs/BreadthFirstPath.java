@@ -1,5 +1,6 @@
 package com.lxiaocode.algorithms.graphs;
 
+import java.util.LinkedList;
 import java.util.Queue;
 
 /**
@@ -32,67 +33,19 @@ public class BreadthFirstPath {
     }
 
     private void bfs(Graph graph, int start){
-        Queue<Integer> queue = new Queue<Integer>();
-        queue.enqueue(start);
+        Queue<Integer> queue = new LinkedList<>();
+        queue.add(start);
         while(! queue.isEmpty()){
-            Integer v = queue.dequeue();
+            Integer v = queue.poll();
             for (int w : graph.adj(v)){
                 if (! this.marked[w]){
                     edgeTo[w] = v;
                     marked[w] = true;
-                    queue.enqueue(w);
+                    queue.add(w);
                 }
             }
 
         }
 
-    }
-
-    private class Queue<T>{
-
-        private Node head;
-        private Node end;
-        private int size;
-
-        public Queue(){
-            this.head = null;
-            this.end = null;
-            this.size = 0;
-        }
-        
-        public boolean isEmpty(){
-            return this.size == 0;
-        }
-
-        public void enqueue(T item){
-            if (this.size == 0) {
-                Node node = new Node(item, null);
-                this.head = node;
-                this.end = node;
-            }
-
-            this.head.next = new Node(item, null);
-            this.head = this.head.next;
-            this.size++;
-        }
-
-        public T dequeue(){
-            if (this.size == 0) return null;
-
-            Node node = this.head;
-            this.head = this.head.next;
-            this.size--;
-            return node.value;
-        }
-
-        private class Node{
-            private final T value;
-            private Node next;
-
-            public Node(T value, Node next){
-                this.value = value;
-                this.next = next;
-            }
-        }
     }
 }
